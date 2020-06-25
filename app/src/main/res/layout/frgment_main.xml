@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_margin="@android:dimen/app_icon_size"
+
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textFontWeight="@android:integer/config_longAnimTime"
+            android:textSize="30sp"
+            android:textStyle="italic"
+
+            />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <Button
+            android:id="@+id/allCategoryButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:onClick="onClick"
+            android:text="כל המתכונים"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40dp"
+            android:background="@drawable/background"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:id="@+id/favoriteButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:onClick="onClick"
+            android:text="מועדפים"
+            android:textSize="35dp"
+      android:background="@drawable/background"
+            android:padding="10dp"/>
+</LinearLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:onClick="onClick"
+        android:src="@android:drawable/ic_input_add"
+        app:maxImageSize="50dp"
+        android:tint="#00ff00"
+        android:visibility="gone"/>
+
+        />
+</RelativeLayout>
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="29dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:baselineAligned="false"
+        android:text="הוסף מתכון"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        >
+    </TextView>
+    <EditText
+        android:id="@+id/add_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="שם מתכון"
+        android:textSize="20sp"/>
+
+
+    <Spinner
+        android:id="@+id/spinner_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="General"
+        android:layout_marginTop="3dp"
+        >
+    </Spinner>
+
+
+    <EditText
+        android:id="@+id/ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="3dp"
+        android:minHeight="70dp"
+        android:hint="רכיבים"
+        android:textSize="13sp"/>
+    <EditText
+        android:id="@+id/instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="3dp"
+        android:minHeight="70dp"
+        android:hint="הוראות / קישור"
+        android:textSize="13sp"/>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/img_from_user"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18sp"
+        />
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/save"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/background"
+
+
+                android:text="שמור"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="25sp">Add Recipe</Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

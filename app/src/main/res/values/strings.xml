@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="cancel">ביטול</string>
+    <string name="fire">מחק</string>
+    <string name="dialog_fire_missiles">Are You Sure?</string>
+    <string-array name="category_list">
+        <item>כללי</item>
+        <item>פסח</item>
+        <item>חלבי</item>
+        <item>בשרי</item>
+        <item>פרווה</item>
+        <item>קינוח</item>
+        <item>בריאות</item>
+        <item>מרקים</item>
+        <item>פשטידות</item>
+        <item>סלטים</item>
+
+    </string-array>
+</resources>
